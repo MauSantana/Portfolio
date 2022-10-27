@@ -1,0 +1,47 @@
+.portfolio > p {
+    margin: 2rem 0;
+    width: 8rem;
+}
+
+.portfolio__cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio__cabecalho-lista {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.portfolio__cabecalho-item {
+    display: flex;
+    border: 0.1rem solid var(--roxo-medio);
+    border-radius: 1rem;
+    margin-left: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--roxo-claro);
+    font-size: 0.8rem;
+    width: 10rem;
+}
+
+.portfolio__projetos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio__projetos-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 1.5rem;
+    height: 350px;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--roxo-medio);
+}
+
+.portfolio__projetos-item > p {
+    font-size: 1.6rem;
+}

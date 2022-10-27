@@ -1,0 +1,51 @@
+:root {
+    /* cores usadas no site */
+    --azul-escuro: #090E16;
+    --roxo-claro: #7B4AE2;
+    --roxo-claro-opacidade: hsl(259, 72%, 59%, 0.07);
+    --roxo-medio: rgb(123, 74, 226, 0.5);
+    --branco: #FFFFFF;
+    --cinza-claro: #D4BFFF;
+
+    /* fontes usadas no site */
+    --raleway: 'Raleway';
+}
+
+body {
+    font-family: var(--raleway);
+    background-color: var(--azul-escuro);
+}
+
+.container {
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.subtitulo {
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.texto-personalizado {
+    padding: 0.6rem;
+    text-align: center;
+    width: 60%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--roxo-claro);
+    background-color: var(--roxo-claro-opacidade);
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+}
+
+.barra-divisoria {
+    background-color: var(--roxo-claro-opacidade);
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.card-personalizado {
+    background-color: var(--roxo-claro-opacidade);
+}

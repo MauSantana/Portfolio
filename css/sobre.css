@@ -1,0 +1,25 @@
+.sobre {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.sobre .subtitulo {
+    margin-bottom: 1.5rem;
+}
+
+.sobre__avatar {
+    width: 40%;
+}
+
+.sobre__texto {
+    font-size: 0.8rem;
+    color: var(--branco);
+    opacity: 0.5;
+    margin-bottom: 1.2rem;
+}
+
+.sobre__conteudo .texto-personalizado {
+    width: 10rem;
+}

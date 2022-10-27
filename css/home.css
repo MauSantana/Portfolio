@@ -1,0 +1,33 @@
+.home {
+   display: flex; 
+   align-items: center;
+   justify-content: space-around;
+   padding-top: 2rem;
+}
+
+.home__avatar {
+    width: 40%;
+}
+
+.home__titulo {
+    color: var(--branco);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.home__subtitulo {
+    font-size: 0.8rem;
+    color: var(--branco);
+    opacity: 0.5;
+    margin-bottom: 1.2rem;
+}
+
+.home__midia {
+    display: inline-block;
+}
+
+.home__midia img{
+    width: 1.2rem;
+    padding-right: 0.5rem;
+}
