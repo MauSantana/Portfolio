@@ -1,0 +1,52 @@
+.recomendacao .texto-personalizado {
+    margin: 3rem 0;
+    width: 15%;
+}
+
+.recomendacao .subtitulo {
+    margin-bottom: 2rem;
+}
+
+.recomendacao__conteudo-lista {
+    display: flex;
+}
+
+.recomendacao__conteudo-item {
+    border: 0.1rem solid var(--roxo-medio);
+    width: 30%;
+    text-align: justify;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.recomendacao__texto {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    color: var(--branco);
+    opacity: 0.5;
+    height: 30%;
+}
+
+.recomendacao__perfil {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.recomendacao__perfil-nome {
+    font-weight: bold;
+    color: var(--branco);
+    margin-bottom: 0.5rem;
+}
+
+.recomendacao__perfil-area {
+    text-align: justify;
+    font-size: 60%;
+    font-weight: bold;
+    color: var(--roxo-claro);
+}
+
+.recomendacao__perfil-foto {
+    width: 15%;
+    margin-right: 1rem;
+}

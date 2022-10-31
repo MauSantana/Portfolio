@@ -49,3 +49,16 @@ body {
 .card-personalizado {
     background-color: var(--roxo-claro-opacidade);
 }
+
+.voltar-topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+}
+
+.voltar-topo__texto {
+    font-weight: bold;
+    color: var(--roxo-claro);
+    padding-right: 0.5rem;
+}

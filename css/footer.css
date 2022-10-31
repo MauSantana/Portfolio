@@ -1,0 +1,22 @@
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+}
+.rodape__item {
+    margin: 1rem 0.5rem;
+}
+
+.rodape__texto {
+    font-size: 0.7rem;
+    color: var(--branco);
+    opacity: 0.5;
+    width: 30%;
+}
+
