@@ -25,6 +25,7 @@
     padding: 0 1rem;
     color: var(--branco);
     opacity: 0.5;
+    font-size: 0.8rem;
 }
 
 .contato__avatar {
