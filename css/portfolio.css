@@ -23,6 +23,13 @@
     color: var(--roxo-claro);
     font-size: 0.8rem;
     width: 10rem;
+    transition: 0.3s;
+}
+
+.portfolio__cabecalho-item:hover {
+    cursor: pointer;
+    color: var(--cinza-claro);
+    background-color: var(--roxo-claro-opacidade);
 }
 
 .portfolio__projetos-lista {

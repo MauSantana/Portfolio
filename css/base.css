@@ -61,4 +61,10 @@ body {
     font-weight: bold;
     color: var(--roxo-claro);
     padding-right: 0.5rem;
+    transition: 0.5s;
+}
+
+.voltar-topo__texto:hover {
+    opacity: 1;
+    border-bottom: 1px solid var(--roxo-claro);
 }

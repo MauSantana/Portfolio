@@ -13,12 +13,27 @@
     margin-bottom: 2rem;
 }
 
-.contato__conteudo-item {
+.contato__item {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
     margin: 1rem 0;
+}
+
+.contato__item-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.contato__item-card:hover {
+    cursor: pointer;
+    color: var(--branco);
+    background-color: var(--roxo-claro-opacidade);
+    opacity: 1;
 }
 
 .contato__texto {
