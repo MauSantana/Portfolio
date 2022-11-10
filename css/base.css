@@ -1,19 +1,19 @@
 :root {
     /* cores usadas no site */
     --azul-escuro: #090E16;
+    --branco: #FFFFFF;
+    --cinza-claro: #D4BFFF;
     --roxo-claro: #7B4AE2;
     --roxo-claro-opacidade: hsl(259, 72%, 59%, 0.07);
     --roxo-medio: rgb(123, 74, 226, 0.5);
-    --branco: #FFFFFF;
-    --cinza-claro: #D4BFFF;
 
     /* fontes usadas no site */
     --raleway: 'Raleway';
 }
 
 body {
-    font-family: var(--raleway);
     background-color: var(--azul-escuro);
+    font-family: var(--raleway);
 }
 
 .container {
@@ -28,22 +28,22 @@ body {
 }
 
 .texto-personalizado {
+    background-color: var(--roxo-claro-opacidade);
+    border-radius: 0.6rem;
+    color: var(--roxo-claro);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
     padding: 0.6rem;
     text-align: center;
     width: 60%;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--roxo-claro);
-    background-color: var(--roxo-claro-opacidade);
-    margin-bottom: 1rem;
-    border-radius: 0.6rem;
 }
 
 .barra-divisoria {
     background-color: var(--roxo-claro-opacidade);
     height: 0.1rem;
-    width: 100%;
     margin-top: 10rem;
+    width: 100%;
 }
 
 .card-personalizado {
@@ -51,31 +51,31 @@ body {
 }
 
 .voltar-topo {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 8rem 0;
 }
 
 .voltar-topo__texto {
-    font-weight: bold;
-    color: var(--roxo-claro);
-    padding-right: 0.5rem;
-    transition: 0.3s;
     border-bottom: 1px solid var(--azul-escuro);
+    color: var(--roxo-claro);
+    font-weight: bold;
+    transition: 0.3s;
+    padding-right: 0.5rem;
     padding-bottom: 0.2rem;
 }
 
 .voltar-topo:hover .voltar-topo__texto{
-    opacity: 1;
     border-bottom: 1px solid var(--roxo-claro);
-}
-
-#academico {
-    display: block;
+    opacity: 1;
 }
 
 #profissional {
+    display: block;
+}
+
+#academico {
     display: none;
 }
 
@@ -83,8 +83,12 @@ body {
     display: none;
 }
 
+/* Responsividade para mobile */
 @media screen and (max-width: 480px) {
     .barra-divisoria {
+        display: none;
+    }
+    .voltar-topo{
         display: none;
     }
 }

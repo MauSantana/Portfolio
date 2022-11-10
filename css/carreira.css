@@ -1,9 +1,9 @@
 .carreira {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .carreira > .subtitulo {
@@ -12,8 +12,8 @@
 
 .carreira .texto-personalizado{
     margin: 5rem 0 2rem;
-    width: 15%;
     text-align: center;
+    width: 15%;
 }
 
 .carreira__conteudo {
@@ -26,37 +26,37 @@
 }
 
 .carreira__conteudo-lista > .subtitulo{
-    margin: 4rem 0;
     font-size: 1.5rem;
+    margin: 4rem 0;
     text-align: center;
 }
 
 .carreira__conteudo-item {
-    margin-bottom: 3rem;
     border: 0.1rem solid var(--roxo-medio);
     border-radius: 1rem;
-    text-align: justify;
     font-size: 0.8rem;
+    margin-bottom: 3rem;
     padding: 1.5rem;
+    text-align: justify;
 }
 
 .carreira__conteudo-item > .subtitulo {
-    margin-bottom: 0.5rem;
     font-size: 1rem;
+    margin-bottom: 0.5rem;
     text-align: justify;
 }
 
 .carreira__texto-instituicao {
-    margin-left: 1rem;
     color: var(--branco);
     font-size: 0.7rem;
+    margin-left: 1rem;
 }
 
 .carreira__texto {
-    font-size: 0.6rem;
     color: var(--branco);
-    opacity: 0.5;
+    font-size: 0.6rem;
     margin: 1rem 0;
+    opacity: 0.5;
 }
 
 .carreira__detalhes {
@@ -75,6 +75,7 @@
     font-size: 80%;
 }
 
+/* Responsividade para mobile */
 @media screen and (max-width: 480px) {
     .carreira .texto-personalizado {
         width: 50%;

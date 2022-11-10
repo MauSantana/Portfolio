@@ -14,11 +14,11 @@
 
 .diferenciais__item {
 	border: 0.1rem solid var(--roxo-medio);
-    width: 10rem;
-    text-align: center;
+    border-radius: 1rem;
     margin: 10rem 1rem 2rem 1rem;
     padding: 1.5rem 0.5rem;
-    border-radius: 1rem;
+    text-align: center;
+    width: 10rem;
 }
 
 .diferenciais__item img {
@@ -26,21 +26,21 @@
 }
 
 .diferenciais__texto {
-    font-size: 0.7rem;
     color: var(--branco);
+    font-size: 0.7rem;
 }
 
 .complemento-diferenciais__lista {
-    display: flex;
-    justify-content: center;
     background-color: var(--roxo-claro-opacidade);
     border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
     width: 80%;
 }
 
 .complemento-diferenciais__item {
-    text-align: center;
     margin: 1.5rem 3rem;
+    text-align: center;
 }
 
 .complemento-diferenciais__texto {
@@ -54,6 +54,7 @@
     font-weight: bolder;
 }
 
+/* Responsividade para mobile */
 @media screen and (max-width: 480px) {
     .diferenciais {
         margin-top: 5rem;

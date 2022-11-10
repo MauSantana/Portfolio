@@ -124,17 +124,63 @@
             <div class="portfolio__cabecalho">
                 <h2 class="subtitulo">Trabalhos e projetos</h2>
                 <ul class="portfolio__cabecalho-lista">
-                    <li class="portfolio__cabecalho-item" onclick="exibirProjetosAcademicos()">
-                        <img src="img/graduacao-preenchido.png" alt="Icone graduação">
-                        <p class="portfolio__cabecalho-texto">Acadêmicos</p>
-                    </li>
                     <li class="portfolio__cabecalho-item" onclick="exibirProjetosProfissionais()">
                         <img src="img/profissional.png" alt="Icone profissionalismo">
                         <p class="portfolio__cabecalho-texto">Profissionais</p>
                     </li>
+                    <li class="portfolio__cabecalho-item" onclick="exibirProjetosAcademicos()">
+                        <img src="img/graduacao-preenchido.png" alt="Icone graduação">
+                        <p class="portfolio__cabecalho-texto">Acadêmicos</p>
+                    </li>
                     <li class="portfolio__cabecalho-item" onclick="exibirProjetosEstudos()">
                         <img src="img/livros.png" alt="Icone livros">
                         <p class="portfolio__cabecalho-texto">Estudos</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="profissional" class="portfolio__projetos">
+                <ul class="portfolio__projetos-lista">
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Portfólio</h3>
+                        <p class="portfolio__projetos-texto">Projeto pessoal desenvolvido para divulgar meus projetos e
+                            experiências como programador e design.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">CSS</p>
+                            <p class="texto-personalizado">Figma</p>
+                            <p class="texto-personalizado">javaScript</p>
+                        </div>
+                        <img src="img/portfolio.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a href="#home">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/Q7BCRr8z33YTqr8LDveRzD/Portfolio-Mauricio?node-id=0%3A1">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://github.com/MauSantana/Portfolio">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <p class="texto-personalizado">Em breve...</p>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <p class="texto-personalizado">Em breve...</p>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <p class="texto-personalizado">Em breve...</p>
                     </li>
                 </ul>
             </div>
@@ -262,52 +308,6 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
-            <div id="profissional" class="portfolio__projetos">
-                <ul class="portfolio__projetos-lista">
-                    <li class="portfolio__projetos-item">
-                        <h3 class="subtitulo">Portfólio</h3>
-                        <p class="portfolio__projetos-texto">Projeto pessoal desenvolvido para divulgar meus projetos e
-                            experiências como programador e design.</p>
-                        <div class="portfolio__projetos-tecnologias">
-                            <p class="texto-personalizado">CSS</p>
-                            <p class="texto-personalizado">Figma</p>
-                            <p class="texto-personalizado">javaScript</p>
-                        </div>
-                        <img src="img/portfolio.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
-                        <ul class="porftfolio__plataforma-lista">
-                            <li class="porftfolio__plataforma-item">
-                                <a href="#home">
-                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
-                                    <p class="portfolio__plataforma-nome">Site</p>
-                                </a>
-                            </li>
-                            <li class="porftfolio__plataforma-item">
-                                <a target="_blank"
-                                    href="https://www.figma.com/file/Q7BCRr8z33YTqr8LDveRzD/Portfolio-Mauricio?node-id=0%3A1">
-                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
-                                    <p class="portfolio__plataforma-nome">Design</p>
-                                </a>
-                            </li>
-                            <li class="porftfolio__plataforma-item">
-                                <a target="_blank" href="https://github.com/MauSantana/Portfolio">
-                                    <img src="img/icone-github.png" alt="Ícone GitHub"
-                                        class="porfolio__plataforma-icone">
-                                    <p class="portfolio__plataforma-nome">Código</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="portfolio__projetos-item">
-                        <p class="texto-personalizado">Em breve...</p>
-                    </li>
-                    <li class="portfolio__projetos-item">
-                        <p class="texto-personalizado">Em breve...</p>
-                    </li>
-                    <li class="portfolio__projetos-item">
-                        <p class="texto-personalizado">Em breve...</p>
                     </li>
                 </ul>
             </div>
@@ -579,7 +579,8 @@
                     </li>
                     <li class="portfolio__projetos-item">
                         <h3 class="subtitulo">Projeto TypeScript Alura</h3>
-                        <p class="portfolio__projetos-texto">Projeto em TypeScript desenvolvido durante o curso a Formação
+                        <p class="portfolio__projetos-texto">Projeto em TypeScript desenvolvido durante o curso a
+                            Formação
                             TypeScript da Alura.</p>
                         <div class="portfolio__projetos-tecnologias">
                             <p class="texto-personalizado">typeScript</p>
@@ -598,7 +599,8 @@
                     </li>
                     <li class="portfolio__projetos-item">
                         <h3 class="subtitulo">Projeto Alura receitas</h3>
-                        <p class="portfolio__projetos-texto">Projeto Alura-receitas desenvolvido durante o curso arquitetura CSS na formação
+                        <p class="portfolio__projetos-texto">Projeto Alura-receitas desenvolvido durante o curso
+                            arquitetura CSS na formação
                             Front-end da Alura.</p>
                         <div class="portfolio__projetos-tecnologias">
                             <p class="texto-personalizado">HTML</p>
