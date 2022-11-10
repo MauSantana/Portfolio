@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    margin-bottom: -1rem;
 }
 
 .rodape__lista {
@@ -14,8 +15,13 @@
     margin: 1rem 0.5rem;
 }
 
+.rodape__item img {
+    border-bottom: 1px solid var(--roxo-claro-opacidade);
+    padding-bottom: 0.2rem;
+}
+
 .rodape__item img:hover {
-    width: 2.2rem;
+    border-bottom: 1px solid var(--cinza-claro);
 }
 
 .rodape__texto {
@@ -23,5 +29,14 @@
     color: var(--branco);
     opacity: 0.5;
     width: 30%;
+}
+
+@media screen and (max-width: 480px) {
+    .rodape__texto {
+        font-size: 0.5rem;
+    }
+    .rodape__icone {
+        width: 1.5rem;
+    }
 }
 

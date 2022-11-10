@@ -35,7 +35,7 @@
     justify-content: center;
     background-color: var(--roxo-claro-opacidade);
     border-radius: 1.2rem;
-    width: 60%;
+    width: 80%;
 }
 
 .complemento-diferenciais__item {
@@ -52,4 +52,20 @@
     color: var(--roxo-claro);
     font-size: 1.4rem;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 480px) {
+    .diferenciais {
+        margin-top: 5rem;
+    }
+    .diferenciais__lista {
+        flex-direction:column
+    }
+    .complemento-diferenciais__lista {
+        display: none;
+    }
+    .diferenciais__item {
+        margin: 1rem;
+        padding: 1.5rem 3rem;
+    }
 }

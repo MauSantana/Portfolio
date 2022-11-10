@@ -34,6 +34,7 @@
     color: var(--branco);
     background-color: var(--roxo-claro-opacidade);
     opacity: 1;
+    font-weight: bold;
 }
 
 .contato__texto {
@@ -51,3 +52,25 @@
     border: 0.1rem solid var(--roxo-medio);
     border-radius: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+    .contato {
+        flex-direction: column;
+    }
+    .contato .texto-personalizado {
+        width: 50%;
+    }
+    .contato__avatar {
+        width: 80%;
+    }
+    .contato .subtitulo {
+        font-size: 1.5rem;
+    }
+    .contato__texto {
+        font-size: 0.7rem;
+    }
+    .contato__icone {
+        width: 2rem;
+    }
+}
+

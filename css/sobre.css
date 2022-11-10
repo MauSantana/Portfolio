@@ -23,3 +23,22 @@
 .sobre__conteudo .texto-personalizado {
     width: 10rem;
 }
+
+@media screen and (max-width: 480px) {
+    .sobre {
+        flex-direction: column;
+    }
+    .sobre__avatar {
+        width: 100%;
+        margin: 3rem 0;
+    }
+    .sobre .subtitulo {
+        font-size: 1.4rem;
+    }
+    .sobre__texto {
+        font-size: 0.7rem;
+        color: var(--branco);
+        opacity: 0.5;
+        margin-bottom: 1.2rem;
+    }
+}

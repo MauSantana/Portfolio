@@ -11,27 +11,30 @@
 
 .cabecalho__logo {
     width: 2rem;
-    padding-left: 1rem;
-}
-
-.cabecalho__logo:hover {
-    width: 2.1rem;
+    margin-left: 1rem;
 }
 
 .cabecalho__link{
     opacity: 0.5;
     display: inline-block;
     font-size: 0.7rem;
-    padding: 0 1rem;
-    transition: 0.5s;
+    margin: 0 1rem;
+    padding-bottom: 0.2rem;
+    transition: 0.3s;
     border-bottom: 1px solid var(--roxo-claro-opacidade);
 }
 
 .cabecalho__link:hover{
     opacity: 1;
-    border-bottom: 1px solid var(--branco);
+    border-bottom: 1px solid var(--cinza-claro);
 }
 
 .cabecalho__navegacao {
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        display: none;
+    }
 }

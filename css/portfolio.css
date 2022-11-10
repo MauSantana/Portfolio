@@ -30,6 +30,7 @@
     cursor: pointer;
     color: var(--cinza-claro);
     background-color: var(--roxo-claro-opacidade);
+    font-weight: bold;
 }
 
 .portfolio__projetos-lista {
@@ -41,6 +42,7 @@
 .portfolio__projetos-item {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     width: 20%;
     margin: 1.5rem;
@@ -49,6 +51,93 @@
     border: 0.1rem solid var(--roxo-medio);
 }
 
-.portfolio__projetos-item > p {
-    font-size: 1.6rem;
+.portfolio__projetos-item > .subtitulo {
+    font-size: 1rem;
+    margin: 1rem 1rem 0.2rem;
+}
+
+.portfolio__projetos-tecnologias > .texto-personalizado {
+    font-size: 0.7rem;
+    margin: 0.2rem;
+}
+
+.portfolio__imagem-projeto {
+    width: 85%;
+    height: 30%;
+    border: 0.1rem solid var(--roxo-medio);
+    border-radius: 0.5rem;
+}
+
+.portfolio__projetos-texto {
+    font-size: 0.6rem;
+    color: var(--cinza-claro);
+    width: 80%;
+    height: 20%;
+    text-align: justify;
+}
+.portfolio__projetos-tecnologias {
+    display: flex;
+}
+
+.portfolio__projetos-tecnologias > p {
+    font-size: 0.7rem;
+}
+.porftfolio__plataforma-lista {
+    display: flex;
+}
+.porftfolio__plataforma-item {
+    text-align: center;
+    width: 30%;
+    margin: 0.5rem 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.porftfolio__plataforma-item:hover .portfolio__plataforma-nome {
+    border-bottom: 0.1rem solid var(--roxo-claro);
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.portfolio__plataforma-nome {
+    color: var(--roxo-claro);
+    font-size: 0.5rem;
+    opacity: 0.5;
+    border-bottom: 0.1rem solid var(--azul-escuro);
+    padding-bottom: 0.1rem;
+}
+
+.porfolio__plataforma-icone {
+    width: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio__cabecalho-item {
+        font-size: 0.6rem;
+        margin: 0.2rem;
+    }
+    .portfolio__cabecalho-item > img{
+        width: 1.5rem;
+    }
+    .porftfolio__plataforma-item {
+        width: 80%;
+    }
+    .portfolio__cabecalho {
+        flex-direction: column;
+    }
+    .portfolio__cabecalho > .subtitulo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .portfolio__projetos-lista{
+        flex-direction: column;
+    }
+    .portfolio__projetos-item {
+        width: 80%;
+    }
+    
 }

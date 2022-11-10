@@ -41,3 +41,22 @@
     font-size: 0.6rem;
     margin: 0.5rem 0;
 }
+
+@media screen and (max-width: 480px) {
+    .skills__lista img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .skills__texto-item {
+        display: none;
+    }
+    .skills .subtitulo {
+        font-size: 1.3rem;
+    }
+    .skills__item {
+        margin: 0.3rem;
+    }
+    .skills .texto-personalizado {
+        width: 50%;
+    }
+}

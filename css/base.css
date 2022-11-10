@@ -61,10 +61,30 @@ body {
     font-weight: bold;
     color: var(--roxo-claro);
     padding-right: 0.5rem;
-    transition: 0.5s;
+    transition: 0.3s;
+    border-bottom: 1px solid var(--azul-escuro);
+    padding-bottom: 0.2rem;
 }
 
-.voltar-topo__texto:hover {
+.voltar-topo:hover .voltar-topo__texto{
     opacity: 1;
     border-bottom: 1px solid var(--roxo-claro);
+}
+
+#academico {
+    display: block;
+}
+
+#profissional {
+    display: none;
+}
+
+#estudo {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .barra-divisoria {
+        display: none;
+    }
 }

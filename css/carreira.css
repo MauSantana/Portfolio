@@ -75,3 +75,20 @@
     font-size: 80%;
 }
 
+@media screen and (max-width: 480px) {
+    .carreira .texto-personalizado {
+        width: 50%;
+    }
+    .carreira > .subtitulo {
+        font-size: 1.5rem;
+    }
+    .carreira__conteudo {
+        flex-direction: column;
+    }
+    .carreira__conteudo-lista {
+        width: 100%;
+    }
+    .carreira__conteudo-lista > .subtitulo{
+        font-size: 1.2rem;
+    }
+}

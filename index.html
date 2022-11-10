@@ -124,24 +124,181 @@
             <div class="portfolio__cabecalho">
                 <h2 class="subtitulo">Trabalhos e projetos</h2>
                 <ul class="portfolio__cabecalho-lista">
-                    <li class="portfolio__cabecalho-item">
+                    <li class="portfolio__cabecalho-item" onclick="exibirProjetosAcademicos()">
                         <img src="img/graduacao-preenchido.png" alt="Icone graduação">
                         <p class="portfolio__cabecalho-texto">Acadêmicos</p>
                     </li>
-                    <li class="portfolio__cabecalho-item">
+                    <li class="portfolio__cabecalho-item" onclick="exibirProjetosProfissionais()">
                         <img src="img/profissional.png" alt="Icone profissionalismo">
                         <p class="portfolio__cabecalho-texto">Profissionais</p>
                     </li>
-                    <li class="portfolio__cabecalho-item">
+                    <li class="portfolio__cabecalho-item" onclick="exibirProjetosEstudos()">
                         <img src="img/livros.png" alt="Icone livros">
                         <p class="portfolio__cabecalho-texto">Estudos</p>
                     </li>
                 </ul>
             </div>
-            <div class="portfolio__projetos">
+            <div id="academico" class="portfolio__projetos">
                 <ul class="portfolio__projetos-lista">
                     <li class="portfolio__projetos-item">
-                        <p class="texto-personalizado">Em breve...</p>
+                        <h3 class="subtitulo">Health Analytics</h3>
+                        <p class="portfolio__projetos-texto">Projeto desenvolvido em grupo durante o primeiro semestre
+                            na
+                            faculdade SPTech. Voltado para segurança e medicina no trabalho, com objetivo de garantir
+                            mais
+                            desempenho e produção para as empresas.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">Azure</p>
+                            <p class="texto-personalizado">javaScript</p>
+                            <p class="texto-personalizado">node.js</p>
+                        </div>
+                        <img src="img/health-analytics.png" alt="Projeto Health Analytics"
+                            class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://github.com/BandTec/Health-Analytics">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Sysight</h3>
+                        <p class="portfolio__projetos-texto">Projeto desenvolvido em grupo durante o segundo semestre na
+                            faculdade SPTech. Uma consultoria especializada no monitoramento de equipamentos
+                            corporativos com o intuito de garantir alta performance e reduzir os custos operacionais da
+                            empresa.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">AWS</p>
+                            <p class="texto-personalizado">Azure</p>
+                            <p class="texto-personalizado">Java</p>
+                        </div>
+                        <img src="img/sysight.png" alt="Projeto Sysight" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://github.com/BandTec/Health-Analytics">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Mulher Segura</h3>
+                        <p class="portfolio__projetos-texto">Projeto desenvolvido em grupo durante o terceiro semestre
+                            na
+                            faculdade SPTech. Projeto voltado para o combate a violência doméstica, com uma comunicação
+                            mais rápida e eficiente entre vítimas e meios de denúncia.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">Azure</p>
+                            <p class="texto-personalizado">React</p>
+                            <p class="texto-personalizado">SpringBoot</p>
+                        </div>
+                        <img src="img/mulher-segura.png" alt="Projeto Mulher Segura" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/UAnhyikJJoWPJHtiVUBs9M/Prot%C3%B3tipo-Mulher-segura">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://github.com/dasSouza/MulherSegura">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">2WORK</h3>
+                        <p class="portfolio__projetos-texto">Projeto mobile desenvolvido em grupo durante o quarto
+                            semestre na
+                            faculdade SPTech. Aplicação com principal objetivo de expor e promover projetos de
+                            desenvolvedores.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">Azure</p>
+                            <p class="texto-personalizado">Java</p>
+                            <p class="texto-personalizado">Kotlin</p>
+                        </div>
+                        <img src="img/2work.png" alt="Projeto 2Work" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/E1jrJfVWFf75YgV2jps1V9/2WORK---MOBILE">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://github.com/Caio-Elcio/2WORK-Mobile">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Music box</h3>
+                        <p class="portfolio__projetos-texto">Protótipo desenvolvido durante o Bootcamp da ferramenta
+                            Figma na
+                            faculdade SPTech. Formulário de uma plataforma de Streaming de músicas.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">Figma</p>
+                        </div>
+                        <img src="img/music-box.png" alt="Projeto Sysight" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/e4r46V9l9Bs4eWHKzui10n/Prot%C3%B3tipo-Music-Box?node-id=3%3A1">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="profissional" class="portfolio__projetos">
+                <ul class="portfolio__projetos-lista">
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Portfólio</h3>
+                        <p class="portfolio__projetos-texto">Projeto pessoal desenvolvido para divulgar meus projetos e
+                            experiências como programador e design.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">CSS</p>
+                            <p class="texto-personalizado">Figma</p>
+                            <p class="texto-personalizado">javaScript</p>
+                        </div>
+                        <img src="img/portfolio.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a href="#home">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/Q7BCRr8z33YTqr8LDveRzD/Portfolio-Mauricio?node-id=0%3A1">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://github.com/MauSantana/Portfolio">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="portfolio__projetos-item">
                         <p class="texto-personalizado">Em breve...</p>
@@ -152,14 +309,318 @@
                     <li class="portfolio__projetos-item">
                         <p class="texto-personalizado">Em breve...</p>
                     </li>
+                </ul>
+            </div>
+            <div id="estudo" class="portfolio__projetos">
+                <ul class="portfolio__projetos-lista">
                     <li class="portfolio__projetos-item">
-                        <p class="texto-personalizado">Em breve...</p>
+                        <h3 class="subtitulo">Alura Store</h3>
+                        <p class="portfolio__projetos-texto">Projeto Alura Store desenvolvido durante a formação
+                            Front-end da Alura no curso de CSS:grid simplificando layouts.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">HTML</p>
+                            <p class="texto-personalizado">CSS</p>
+                        </div>
+                        <img src="img/alura-store.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-alura-store.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/blob/main/Alura/Formacao%20Front-End/css-grid-simplificando-layouts/Projeto%20Inicial%20Grid%20Layout/alura-store/prototipo.pdf">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20Front-End/css-grid-simplificando-layouts/Projeto%20Inicial%20Grid%20Layout/alura-store">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="portfolio__projetos-item">
-                        <p class="texto-personalizado">Em breve...</p>
+                        <h3 class="subtitulo">Alurinha</h3>
+                        <p class="portfolio__projetos-texto">Projeto Alurinha desenvolvido durante a formação Front-end
+                            da Alura no curso de flexbox-posicionamento.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">HTML</p>
+                            <p class="texto-personalizado">CSS</p>
+                        </div>
+                        <img src="img/alurinha.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-alurinha.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20Front-End/flexbox-posicionamento/posicione-elementos-com-flexbox-809f39a39e473c574e3c6d9d9929626f8d1352fa">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="portfolio__projetos-item">
-                        <p class="texto-personalizado">Em breve...</p>
+                        <h3 class="subtitulo">Alura barbearia</h3>
+                        <p class="portfolio__projetos-texto">Projeto Alura-barbearia desenvolvido durante a formação
+                            HTML e CSS da Alura.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">HTML</p>
+                            <p class="texto-personalizado">CSS</p>
+                        </div>
+                        <img src="img/alura-barbearia.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-barbearia-da-alura.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20Front-End/html5-e-css3-parte4">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Alura Midi</h3>
+                        <p class="portfolio__projetos-texto">Projeto Aluramidi desenvolvido durante a formação Front-end
+                            da Alura no curso de javaScript para web.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">javaScript</p>
+                            <p class="texto-personalizado">HTML</p>
+                            <p class="texto-personalizado">CSS</p>
+                        </div>
+                        <img src="img/alura-midi.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-aluramidi.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20Front-End/javascript-para-web/aluramidi">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Apeperia</h3>
+                        <p class="portfolio__projetos-texto">Projeto Alura-apeperia desenvolvido durante a formação
+                            Front-end da Alura no curso de layouts responsivos.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">javaScript</p>
+                            <p class="texto-personalizado">node.js</p>
+                            <p class="texto-personalizado">Azure</p>
+                        </div>
+                        <img src="img/apeperia.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-apeperia.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/FidBn9f7BoBCoEs19EzbUD/Apeperia-Mobile-First?node-id=0%3A1">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20Front-End/layouts-responsivos/projeto-apeperia-b2501c63b2ebdfd8226473a6c8ffa8777e559efe">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">HZC</h3>
+                        <p class="portfolio__projetos-texto">Projeto Alura HZC desenvolvido durante a formação Front-end
+                            da Alura no curso de flex e grid.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">CSS</p>
+                            <p class="texto-personalizado">HTML</p>
+                        </div>
+                        <img src="img/hzc.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-hzc.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/ibWktwVpnog76rMYOdVhks/Dispondo-elementos-com-flexbox-e-grid?node-id=54%3A2358">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20HTML%20e%20CSS/flex-e-grid-aula6">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Alura plus</h3>
+                        <p class="portfolio__projetos-texto">Projeto Alura Plus desenvolvido durante a formação
+                            Front-end da Alura no curso de praticando HTML CSS.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">CSS</p>
+                            <p class="texto-personalizado">HTML</p>
+                        </div>
+                        <img src="img/alura-plus.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-alura-plus.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/tFDVyNuKhrT2G03k2dCstW/Alura-Plus---Layout?node-id=0%3A1">
+                                    <img src="img/Figma.png" alt="Ícone Figma" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Design</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20HTML%20e%20CSS/html-css-praticando/alura-plus">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Projeto Cod3r</h3>
+                        <p class="portfolio__projetos-texto">Projeto em Angular desenvolvido durante o curso de Angular
+                            Essencial 9 pela cod3r.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">typeScript</p>
+                            <p class="texto-personalizado">Angular</p>
+                        </div>
+                        <img src="img/projeto-cod3r.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-cod3r.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Cod3r/Angular-9-essencial/crud">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Projeto ByteBank</h3>
+                        <p class="portfolio__projetos-texto">Projeto em Angular desenvolvido durante o curso de Angular
+                            Explorando o framework da Alura.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">typeScript</p>
+                            <p class="texto-personalizado">Angular</p>
+                        </div>
+                        <img src="img/bytebank.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://projeto-bytebank.netlify.app/extrato">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20Angular/explorando-o-framework/bytebank">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Projeto TypeScript Alura</h3>
+                        <p class="portfolio__projetos-texto">Projeto em TypeScript desenvolvido durante o curso a Formação
+                            TypeScript da Alura.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">typeScript</p>
+                        </div>
+                        <img src="img/projeto-typescript.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20TypeScript/evoluindo-seu-js/curso-3-mais-tecnicas-e-boa-pratica">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__projetos-item">
+                        <h3 class="subtitulo">Projeto Alura receitas</h3>
+                        <p class="portfolio__projetos-texto">Projeto Alura-receitas desenvolvido durante o curso arquitetura CSS na formação
+                            Front-end da Alura.</p>
+                        <div class="portfolio__projetos-tecnologias">
+                            <p class="texto-personalizado">HTML</p>
+                            <p class="texto-personalizado">CSS</p>
+                        </div>
+                        <img src="img/alura-receitas.png" alt="Projeto Portfólio" class="portfolio__imagem-projeto">
+                        <ul class="porftfolio__plataforma-lista">
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank" href="https://alura-receitas.netlify.app/">
+                                    <img src="img/website.png" alt="Ícone site" class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Site</p>
+                                </a>
+                            </li>
+                            <li class="porftfolio__plataforma-item">
+                                <a target="_blank"
+                                    href="https://github.com/MauSantana/Estudos/tree/main/Alura/Formacao%20TypeScript/evoluindo-seu-js/curso-3-mais-tecnicas-e-boa-pratica">
+                                    <img src="img/icone-github.png" alt="Ícone GitHub"
+                                        class="porfolio__plataforma-icone">
+                                    <p class="portfolio__plataforma-nome">Código</p>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="portfolio__projetos-item">
                         <p class="texto-personalizado">Em breve...</p>
@@ -368,7 +829,8 @@
                 <h2 class="subtitulo">Vamos conversar!</h2>
                 <div class="contato__conteudo-contatos">
                     <ul class="contato__lista">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511953843747&text=Ol%C3%A1%20Maur%C3%ADcio%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20iniciar%20um%20bate%20papo%20para%20saber%20mais%20sobre%20seus%20servi%C3%A7os.">
+                        <a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5511953843747&text=Ol%C3%A1%20Maur%C3%ADcio%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20iniciar%20um%20bate%20papo%20para%20saber%20mais%20sobre%20seus%20servi%C3%A7os.">
                             <li class="contato__item-card borda">
                                 <img src="img/whatsapp.png" alt="Ícone whatsapp" class="contato__icone">
                                 <p class="contato__texto">Clique aqui para me contatar via Whatsapp</p>
@@ -377,7 +839,6 @@
                         <li class="contato__item">
                             <img src="img/email.png" alt="Ícone e-mail" class="contato__icone">
                             <p class="contato__texto">E-mail: santanamauricio178@gmail.com</p>
-                            <img src="img/copia.png" alt="Ícone cópia" class="contato__icone">
                         </li>
                     </ul>
                 </div>
